@@ -96,7 +96,7 @@ The model was created by Zhongliang Zhou and Wayland Yeung. The Phos-ST webtool 
 
    
 
-- `Readme.md`: You're reading it right now 
+- `README.md`: You're reading it right now 
 
   
 
