@@ -1,0 +1,9 @@
+use one of the links below to download the training weights 
+
+https://huggingface.co/gravelcompbio/Phosformer-ST_trainging_weights/tree/main
+
+or
+
+https://zenodo.org/record/8170005
+
+see readme for more info
