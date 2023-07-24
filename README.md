@@ -1,13 +1,5 @@
 <!-- This Github was Made By Nathan Gravel and tested with help of Mariah Salcedo-->
-# Phosformer-ST [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
-
-This work is licensed under a
-[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
-
-[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
- 
-
-  
+# Phosformer-ST  <img src="https://github.com/gravelCompBio/Phosformer-ST/assets/75225868/f375e377-b639-4b8c-9792-6d8e5e9e6c39" width="60">
 
 ## Introduction  
 
