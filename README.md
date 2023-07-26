@@ -541,7 +541,7 @@ phosST(kinDomain,substrate).to_csv('NegitiveExample.csv')
 
 ``` 
 
-Both scores should show up in a csv file in the same folder 
+Both scores should show up in a csv file in the current directory
 
   
 
