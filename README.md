@@ -1,4 +1,4 @@
-<!-- This Github was Made By Nathan Gravel and tested with help of Mariah Salcedo--> 
+<!-- This github was Made by Nathan Gravel --> 
 
 # Phosformer-ST  <img src="https://github.com/gravelCompBio/Phosformer-ST/assets/75225868/f375e377-b639-4b8c-9792-6d8e5e9e6c39" width="60"> 
 
@@ -54,39 +54,34 @@ This repository contains the code to run Phosformer-ST locally described in the 
 
   
 
-- `phos-ST_Example_Code.ipynb`: Jupyter File with example code to run Phosformer-ST 
+- `phos-ST_Example_Code.ipynb`: ipynb file with example code to run Phosformer-ST 
 
   
 
-- `modeling_esm.py`: Python file that has the architecture of Phosformer-ST 
+    - `modeling_esm.py`: Python file that has the architecture of Phosformer-ST 
+    
+      
+    
+    - `configuration_esm.py`: Python file that has configuration/parameters of Phosformer-ST  
+    
+      
+    
+    - `tokenization_esm.py`: Python file that contains code for the tokenizer  
 
   
 
-- `configuration_esm.py`: Python file that has configuration/parameters of Phosformer-ST  
-
   
 
-- `tokenization_esm.py`: Python file that contains code for the tokenizer  
+- `multitask_MHA_esm2_t30_150M_UR50D_neg_ratio_8+8_shift_30_mask_0.2_2023-03-25_90.txt`: this txt file contains a link to the training weights held on the hugging face or zenodo repository 
 
+    - See section below (Downloading this repository) to be shown how to download this folder and where to put it
   
 
-  
-
-- `multitask_MHA_esm2_t30_150M_UR50D_neg_ratio_8+8_shift_30_mask_0.2_2023-03-25_90.txt`: this txt file contains a link to a zenodo repository to download the proper folder  
-
-  
-
-  - This folder holds the files that contain the training weights for Phosformer-ST to run as advertised 
-
-  - See section below (Downloading this repository) for folder specifications after download 
-
-  
-
-- `phosST.yml`: This file is used to help create an environment for Phos-ST to work 
+- `phosST.yml`: This file is used to help create an environment for Phosformer-ST to work 
 
    
 
-- `README.md`: You're reading it right now 
+- `README.md`: 
 
   
 
@@ -193,71 +188,7 @@ Follow along with its recommendation
 Installing torch can be the most complex part  
 
   
-
   
-
-</br> 
-
-  
-
-  
-
-  
-
-   
-
-### The model has been tested on operating system with the following specifications 
-
-  
-
-</br> 
-
-  
-
-**Computer 1** 
-
-  
-
-Ubuntu 22.04.2 LTS 
-
-  
-
-Intel(R) Xeon(R) Bronze 3204 CPU @ 1.90GHz  (6 cores) x (1 thread per core) 
-
-  
-
-64 GB ram 
-
-  
-
-NVIDIA Quadro RTX 5000 (16 GB vRAM)(CUDA Version: 12.1)  
-
-  
-
-</br> 
-
-  
-
-**Computer 2** 
-
-  
-
-Ubuntu 20.04.6 LTS 
-
-  
-
-Intel(R) Xeon(R) Bronze 3204 CPU @ 1.90GHz  (6 cores) x (1 thread per core) 
-
-  
-
-64 GB ram 
-
-  
-
-NVIDIA RTX A4000 (16 GB vRAM)(CUDA Version: 12.2)  
-
-  
-
   
 
   
@@ -288,11 +219,12 @@ gh repo clone gravelCompBio/Phosformer-ST
 cd Phosformer-ST 
 ``` 
 
-### The following step uses other repos because the folder is larger than the allowed space on github 
+### The following step demonstrates users how to download the training weights 
+
+
+  -other repositories were used because the folder's memory size is larger than the allowed space on github 
 
   
-
-### PICK ONE of the options below  
 
   
 
@@ -300,7 +232,7 @@ cd Phosformer-ST
 
   
 
-### Option 1) Hugging Face  
+### Main option) Hugging Face  
 
   
 
@@ -334,7 +266,7 @@ Click the download box highlighted in picture above
 
   
 
-### Option 2) Zenodo  
+### Alternative option) Zenodo  
 
   
 
@@ -372,7 +304,7 @@ Once downloaded, **unizip** the folder and place in the `Phosformer-ST` along wi
 
   
 
-The `Phosformer-ST` folder should have the following files/folder in it 
+The final `Phosformer-ST` directory orinization should have the following files/folder  
 
   
 
@@ -436,7 +368,7 @@ The `Phosformer-ST` folder should have the following files/folder in it
 
 ### PICK ONE of the options below  
 
-### Option 1) Utilizing the PhosformerST.yml file 
+### Main Option) Utilizing the PhosformerST.yml file 
 
 here is a step-by-step guide to set up the environment with the yml file  
 
@@ -460,9 +392,9 @@ conda activate phosST
 
   
 
-### Option 2) Creating this environment without yml file 
+### Alternative option) Creating this environment without yml file 
 
-(This is if torch is being weird with your version of cuda or any other problem) 
+(This is if torch is not working with your version of cuda or any other problem) 
 
 Just type these lines of code into the terminal after you download this repository (this assumes you have anaconda already installed) 
 
@@ -524,7 +456,7 @@ pip3 install torch torchvision torchaudio
 
   
 
-We provided code to test Phos-ST (see section below) 
+We provided code to test Phosformer-ST (see section below) 
 
   
 
@@ -542,7 +474,7 @@ We provided code to test Phos-ST (see section below)
 
   
 
-## Utilizing the Model with our example 
+## Utilizing the Model with our example code 
 
 All the following code examples is done inside of the `phos-ST_Example_Code.ipynb` file using jupyter lab 
 
@@ -564,7 +496,7 @@ Once you open the notebook on your browser, run each cell in the notebook
 
   
 
-### Testing Phos-ST with the example code 
+### Testing Phosformer-ST with the example code 
 
 There should be a positive control and a negative control example code at the bottom of the `phos-ST_Example_Code.ipynb` file which can be used to test the model. 
   
@@ -623,15 +555,14 @@ One can simply take the code from above and modify the string variables `kinDoma
 
   
 
-**Formatting of the `kinDomain` and `substrate` for input for phos-ST are as follows:** 
+**Formatting of the `kinDomain` and `substrate` for input for Phosformer-ST are as follows:** 
 
   
 
-  - `kinDomain` should just be the kinase domain (instead of the full sequence), preferably human, and a Serine/Threonine kinases   
-
+  - `kinDomain` should be a human Serine/Threonine kinase domain (not the full sequence).
      
 
-  - `substrate` should be a 15mer with the center residue/char being the Serine or Threonine being phosphorylated 
+  - `substrate` should be a 15mer with the center residue/char being the target Serine or Threonine being phosphorylated 
 
   
 
@@ -645,11 +576,13 @@ Not following these rules may result in dubious predictions
 
   
 
-### How to interoperate Phosformer-ST's output 
+### How to interpret Phosformer-ST's output 
 
-This model uses a cuttoff of 0.5 to distinguish positive and negative predictions 
+This model outputs a prediction score between 1 and 0.
 
-  
+
+We trained the model to uses a cutoff of 0.5 to distinguish positive and negative predictions 
+
 
 A score of 0.5 or above indicates a positive prediction for peptide substrate phosphorylation by the given kinase
 
@@ -665,19 +598,77 @@ A score of 0.5 or above indicates a positive prediction for peptide substrate ph
 
   
 
-If torch is not installing correctly or you do not have a GPU to run Phos-ST on, the CPU version of torch is perfectly fine to use 
+If torch is not installing correctly or you do not have a GPU to run Phosformer-ST on, the CPU version of torch is perfectly fine to use 
 
   
 
-Using the CPU version of torch might blow up your run time so for large prediction datasets GPU acceleration is suggested 
+Using the CPU version of torch might increase your run time so for large prediction datasets GPU acceleration is suggested 
 
   
 
-If you just are here to test if it phos-ST works, the example code should not take too much time to run on the CPU version of torch   
+If you just are here to test if it Phosformer-ST works, the example code should not take too much time to run on the CPU version of torch   
 
   
 
 Also depending on your GPU the `batch_size` argument might need to be adjusted 
+
+
+### The model has been tested on the following computers with the following specifications for trouble shooting proposes 
+
+  
+
+</br> 
+
+  
+
+**Computer 1** 
+
+
+
+NVIDIA Quadro RTX 5000 (16 GB vRAM)(CUDA Version: 12.1)  
+
+  
+
+Ubuntu 22.04.2 LTS 
+
+  
+
+Intel(R) Xeon(R) Bronze 3204 CPU @ 1.90GHz  (6 cores) x (1 thread per core) 
+
+  
+
+64 GB ram 
+
+
+
+  
+
+</br> 
+
+  
+
+**Computer 2** 
+
+
+
+NVIDIA RTX A4000 (16 GB vRAM)(CUDA Version: 12.2)  
+
+  
+
+Ubuntu 20.04.6 LTS 
+
+  
+
+Intel(R) Xeon(R) Bronze 3204 CPU @ 1.90GHz  (6 cores) x (1 thread per core) 
+
+  
+
+64 GB ram 
+
+  
+
+
+
 
 
 </br> 
