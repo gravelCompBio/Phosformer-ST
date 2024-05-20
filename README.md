@@ -613,6 +613,12 @@ If you just are here to test if it Phosformer-ST works, the example code should 
 Also depending on your GPU the `batch_size` argument might need to be adjusted 
 
 
+#### 2024-05-17
+- if you get an 'EsmTokenizer' object has no attribute 'all_tokens' error when loading the tokenizer
+- - Make sure you have version of  transformers==4.31.0 installed
+
+
+
 ### The model has been tested on the following computers with the following specifications for trouble shooting proposes 
 
   
