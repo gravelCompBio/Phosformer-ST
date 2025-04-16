@@ -20,6 +20,12 @@
 This repository contains the code to run Phosformer-ST locally described in the manuscript "Phosformer-ST: explainable machine learning uncovers the kinase-substrate interaction landscape". This readme also provides instructions on all dependencies and packages required to run Phosformer-ST in a local environment. 
 </br> 
 
+
+
+
+A webtool for Phosformer-ST can be accessed from: https://esbg.bmb.uga.edu/phosformer/
+
+</br> 
    
 
 ## Quick overview of the dependencies 
@@ -619,7 +625,7 @@ Also depending on your GPU the `batch_size` argument might need to be adjusted
 
 
 
-### The model has been tested on the following computers with the following specifications for trouble shooting proposes 
+### The model has been tested on the following computers with the following specifications for troubleshooting proposes 
 
   
 
@@ -681,7 +687,7 @@ Intel(R) Xeon(R) Bronze 3204 CPU @ 1.90GHz  (6 cores) x (1 thread per core)
 
 
 ## Other accessory tools and resources
-A webtool for Phosformer-ST can be accessed from: https://phosformer.netlify.app/. A huggingface repository can be downloaded from: https://huggingface.co/gravelcompbio/Phosformer-ST_with_trainging_weights. A huggingface spaces app is available at: https://huggingface.co/spaces/gravelcompbio/Phosformer-ST
+A webtool for Phosformer-ST can be accessed from: https://esbg.bmb.uga.edu/phosformer/ . A huggingface repository can be downloaded from: https://huggingface.co/gravelcompbio/Phosformer-ST_with_training_weights. A huggingface spaces app is available at: https://huggingface.co/spaces/gravelcompbio/Phosformer-ST
 
 
   
