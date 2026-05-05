@@ -163,7 +163,7 @@ Python == 3.9.16
 
   
 
-![tqdm=4.65.0](https://img.shields.io/badge/tqdm-4.64.1-blue) 
+![tqdm=4.64.1](https://img.shields.io/badge/tqdm-4.64.1-blue) 
 
   
 
@@ -187,7 +187,7 @@ Make sure you go to this website https://pytorch.org/get-started/locally/
 
   
 
-Follow along with its recommendation  
+Follow the recommended installation instructions
 
   
 
@@ -306,11 +306,11 @@ Click the download box highlighted in picture above
 
   
 
-Once downloaded, **unizip** the folder and place in the `Phosformer-ST` along with all the other files in this github repository 
+Once downloaded, **unzip** the folder and place in the `Phosformer-ST` along with all the other files in this github repository 
 
   
 
-The final `Phosformer-ST` directory orinization should have the following files/folder  
+The final `Phosformer-ST` directory organization should have the following files/folder  
 
   
 
@@ -385,7 +385,7 @@ Just type these lines of code into the terminal after you download this reposito
   
 
 ```   
-conda env create -f phosST.yml -n PhosST  
+conda env create -f phosST.yml -n phosST  
 ```   
 
 ```   
